@@ -47,9 +47,7 @@ int main() {
     std::cout << "\nLoaded 10,000 vectors (128 dimensions each)\n";
 
 
-    // =========================================================================
-    // SECTION 3.4: Recall Validation
-    // =========================================================================
+    
     std::vector<VectorRecord<float>> queries;
     std::vector<VectorRecord<int>> ground_truth;
 
