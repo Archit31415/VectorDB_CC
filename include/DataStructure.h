@@ -1,26 +1,26 @@
-//Defines the flexible Metadata struct using std::unordered_map<std::string, std::any> to hold 
-//arbitrary payloads. This file also defines the templated VectorRecord<T> struct, which stores 
-//the internal id, the std::vector<T> data, and the dimension() helper method.
+    //Defines the flexible Metadata struct using std::unordered_map<std::string, std::any> to hold 
+    //arbitrary payloads. This file also defines the templated VectorRecord<T> struct, which stores 
+    //the internal id, the std::vector<T> data, and the dimension() helper method.
 
-#pragma once
+    #pragma once
 
-#include <any>
-#include <string>
-#include <unordered_map>
-#include <vector>
+    #include <any>
+    #include <string>
+    #include <unordered_map>
+    #include <vector>
 
-struct Metadata {
-    std::unordered_map<std::string, std::any> payload;
-};
+    struct Metadata {
+        std::unordered_map<std::string, std::any> payload;
+    };
 
-template <typename T>
-struct VectorRecord {
-    int id;
-    std::vector<T> vector;
+    template <typename T>
+    struct VectorRecord {
+        int id;
+        std::vector<T> vector;
 
-    Metadata metadata;
+        Metadata metadata;
 
-    size_t dimension() const {
-        return vector.size();
-    }
-};
+        size_t dimension() const {
+            return vector.size();
+        }
+    };

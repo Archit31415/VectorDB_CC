@@ -1,0 +1,3 @@
+/mnt/c/Tarun/Visual Code/VectorDB/VectorDB_CC/build/CMakeFiles/VectorDB.dir
+/mnt/c/Tarun/Visual Code/VectorDB/VectorDB_CC/build/CMakeFiles/edit_cache.dir
+/mnt/c/Tarun/Visual Code/VectorDB/VectorDB_CC/build/CMakeFiles/rebuild_cache.dir
